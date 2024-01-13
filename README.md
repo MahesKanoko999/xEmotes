@@ -1,22 +1,11 @@
-# <div align="center">RPEmotes 🏋️</div>
+# <div align="center">xEmotes 🏋️</div>
 
 
-
-
-RPEmotes is a community driven FiveM emote menu allowing players to express themselves in roleplay with custom animations, countless facial expressions, walkstyles and props, inspired by [DullPear](https://github.com/andristum/dpemotes).
+This Is Fork Repository From [DullPear](https://github.com/andristum/dpemotes).
 
 <p align="center">
   <img src="https://i.imgur.com/1RSxyVq.png" alt="Alt Text" width="800" height="auto">  
 </p>
-
-
-<p align="center">
-    <img src="https://img.shields.io/badge/license-GPL--3.0-blue.svg" alt="License">
-    <a href="https://github.com/TayMcKenzieNZ/rpemotes/stargazers"><img src="https://img.shields.io/github/stars/TayMcKenzieNZ/rpemotes.svg?style=social" alt="Star"></a>
-    <a href="https://github.com/TayMcKenzieNZ/rpemotes/network/members"><img src="https://img.shields.io/github/forks/TayMcKenzieNZ/rpemotes.svg?style=social&label=Forks"></a>
-    <a href="https://github.com/TayMcKenzieNZ/rpemotes/graphs/contributors"><img src="https://img.shields.io/github/contributors/TayMcKenzieNZ/rpemotes.svg?style=social&label=Contributors"></a>
-</p>
-
 
 
 # **Join Our Official Discord 💬**
@@ -135,7 +124,7 @@ Languages can be selected and / or added in the config.lua.
 
 - Further support for shared and couple poses / animations 👫
 
-- Easily convert Menyoo to RPEmotes 🔄
+- Easily convert Menyoo to xEmotes 🔄
 
 - Hide Adult Emotes 🔞
 
@@ -158,17 +147,17 @@ Languages can be selected and / or added in the config.lua.
 When using our emote menu with other scripts, using the `TriggerEvent('animations:client:EmoteCommandStart` won't do anything because the events do not exist. These have simply been replaced with the following exports:
 
 ```lua
-exports["rpemotes"]:EmoteCommandStart(emoteName, textureVariation)
-exports["rpemotes"]:EmoteCancel(forceCancel) – forceCancel is optional
-exports["rpemotes"]:CanCancelEmote(state)
-exports["rpemotes"]:IsPlayerCrouched()
-exports["rpemotes"]:IsPlayerProne()
-exports["rpemotes"]:IsPlayerCrawling()
-exports["rpemotes"]:IsPlayerPointing()
-exports["rpemotes"]:IsPlayerInAnim()
-exports["rpemotes"]:toggleWalkstyle(bool, message)
-exports["rpemotes"]:toggleBinoculars()
-exports["rpemotes"]:toggleNewscam()
+exports["xEmotes"]:EmoteCommandStart(emoteName, textureVariation)
+exports["xEmotes"]:EmoteCancel(forceCancel) – forceCancel is optional
+exports["xEmotes"]:CanCancelEmote(state)
+exports["xEmotes"]:IsPlayerCrouched()
+exports["xEmotes"]:IsPlayerProne()
+exports["xEmotes"]:IsPlayerCrawling()
+exports["xEmotes"]:IsPlayerPointing()
+exports["xEmotes"]:IsPlayerInAnim()
+exports["xEmotes"]:toggleWalkstyle(bool, message)
+exports["xEmotes"]:toggleBinoculars()
+exports["xEmotes"]:toggleNewscam()
 -- bool to allow the user to change their walkstyle in the menu or not / message to show the user (optional, default is :"You are unable to change your walking style right now.")"
 ```
 
@@ -183,11 +172,11 @@ The keybind uses RegisterKeyMapping. By default the configured keybind in the *i
 
 |COMMAND: | ACTION:|
 |---|---|
-| F4 | Open / Close  RPEmotes menu |
+| F4 | Open / Close  xEmotes menu |
 
 Server owners can change this in the `config.lua`.
 
-Alternatively, the player base can set their own menu keybind to open RPEmotes
+Alternatively, the player base can set their own menu keybind to open xEmotes
 
 `Esc > settings > keybinds > fivem`
 
@@ -271,7 +260,7 @@ Moods and walkstyles can be set from the menu. These will save to your character
 
 |COMMAND: | ACTION:|
 |---|---|
-| F4 | Opens RPEmotes menu |
+| F4 | Opens xEmotes menu |
 | /walks | See A List Of Walkstyles In Chat |
 | /moods | See A List Of Walkstyles In Chat |
 | /reset mood | Remove preferred mood and set default |
@@ -402,15 +391,15 @@ in the config file, otherwise leave it as
 Framework = false,
 ```
 
-*You may need to alter some code within qb-core to work with RPEmotes.*
+*You may need to alter some code within qb-core to work with xEmotes.*
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Prop Extractor ⬇️
 
-Many people have expressed concerns over anticheat scripts kicking or banning their community members due to the fact RPEmotes uses props and anticheats detecting said props being spawned.
+Many people have expressed concerns over anticheat scripts kicking or banning their community members due to the fact xEmotes uses props and anticheats detecting said props being spawned.
 
-To make server owners' jobs a little easier, we have added a prop extractor command that you can enter into the server console which will automate a file inside the RPEmotes resource folder appropriately named, `prop_list.lua`.
+To make server owners' jobs a little easier, we have added a prop extractor command that you can enter into the server console which will automate a file inside the xEmotes resource folder appropriately named, `prop_list.lua`.
 
 ### Command:
 
@@ -448,7 +437,7 @@ Command usage example: emoteextract 1
 
 # Installation Instructions ⚙️:
 
-* Add `ensure rpemotes` to your `server.cfg`
+* Add `ensure xEmotes` to your `server.cfg`
 
 * Download the latest recommended artifacts [for Windows](https://runtime.fivem.net/artifacts/fivem/build_server_windows/master/) or [for Linux](https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/)
 
@@ -470,13 +459,13 @@ You can put this before your gamebuild enforcement, aka `+set sv_enforceGameBuil
 
 * Qb-Core server owners, set `Framework = 'qb-core'` in the config file, otherwise leave it as false.
 
-* To use the SQL features, install the [oxmysql](https://github.com/overextended/oxmysql) resource then open `keybinds.lua` in RPEmotes. If you do not want to use the SQL features, comment out the `oxmysql` region in fxmanifest.lua.
+* To use the SQL features, install the [oxmysql](https://github.com/overextended/oxmysql) resource then open `keybinds.lua` in xEmotes. If you do not want to use the SQL features, comment out the `oxmysql` region in fxmanifest.lua.
 
 Alternatively, you can use the keybind command that comes with FiveM without having the SQL, by entering the following into F8:
 
 `bind keyboard "Yourbutton" "e youremote"`. To remove the keybind, type `"unbind keyboard "Yourbutton"`.
 
-* Type `/refresh` and `/start rpemotes` into your chat resource, or simply restart your server
+* Type `/refresh` and `/start xEmotes` into your chat resource, or simply restart your server
 
 # Additional Instructions ⚙️
 
@@ -541,13 +530,13 @@ If no prop is used in the animation or you require the particle effect to be in 
 
 Alternatively, you can use the `PtfxBone =` AnimationOption to attach the PTFX to the ped's bone, simiarly to how you attach props.
 
-Using Menyoo, spawn down a tennis ball and attach it to human, by default menyoo will attach it to the SKEL_ROOT bone (stomach), so from that, what we can do is is either offset the coordinates, say, up to the human ped's mouth, or change the bone all together. Once we've got it correct, we can transfer those coordinates over to RPEmotes, and tah dah, we have our Ptfx Placement.
+Using Menyoo, spawn down a tennis ball and attach it to human, by default menyoo will attach it to the SKEL_ROOT bone (stomach), so from that, what we can do is is either offset the coordinates, say, up to the human ped's mouth, or change the bone all together. Once we've got it correct, we can transfer those coordinates over to xEmotes, and tah dah, we have our Ptfx Placement.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Adding Your Own Animations ⚙️
 
-Because the menu gets updated frequently, the files get overwritten. To avoid this, you can add your own / downloaded animation files `(.ycd)` inside of a newly created folder, give it a name, and place it in the `rpemotes\stream\[Custom Emotes]` folder.
+Because the menu gets updated frequently, the files get overwritten. To avoid this, you can add your own / downloaded animation files `(.ycd)` inside of a newly created folder, give it a name, and place it in the `xEmotes\stream\[Custom Emotes]` folder.
 
 Add your animation code to the `AnimationListCustom.lua` and make a backup of this file, call it `BackUpAnimationListCustom.lua`.
 
@@ -577,15 +566,15 @@ Below is an example:
 
 # 📜 LICENSE & DISCLAIMER
 
-## Aligned with Rockstar Games' [acquisition](https://www.rockstargames.com/newswire/article/8971o8789584a4/roleplay-community-update?utm_source=twitter&utm_medium=o_social&utm_campaign=rockstar_announcement_cfxre-20230811) of Cfxre and FiveM, RPEmotes will abstain from including copyrighted material and animations tailored for child characters, as outlined in bulletpoint 4 of the [November 2023 community pulse](https://forum.cfx.re/t/community-pulse-november-2023/5185781).
+## Aligned with Rockstar Games' [acquisition](https://www.rockstargames.com/newswire/article/8971o8789584a4/roleplay-community-update?utm_source=twitter&utm_medium=o_social&utm_campaign=rockstar_announcement_cfxre-20230811) of Cfxre and FiveM, xEmotes will abstain from including copyrighted material and animations tailored for child characters, as outlined in bulletpoint 4 of the [November 2023 community pulse](https://forum.cfx.re/t/community-pulse-november-2023/5185781).
 
 This repository was created by **TayMcKenzieNZ** for strict usage with the Grand Theft Auto 5 unofficial multiplayer platform 'FiveM', and is under the GNU General Public License v3.0 license.
 
-All custom props and animations were provided to RPEmotes **by the community** with **express permission** and must **not** be extracted from [RpEmotes](https://github.com/TayMcKenzieNZ/rpemotes), reuploaded to any websites, forums or discord servers without permission **and** credits given.
+All custom props and animations were provided to xEmotes **by the community** with **express permission** and must **not** be extracted from [xEmotes](https://github.com/MahesKanoko999/xEmotes), reuploaded to any websites, forums or discord servers without permission **and** credits given.
 
-If you want to modify RPEmotes ***(does not apply if you want to use it for personal purposes)*** you are free to do so, however the RPEmotes Project Team will **not** assist you with this. All **unofficial** copies and modifications of RPEmotes void any support.
+If you want to modify xEmotes ***(does not apply if you want to use it for personal purposes)*** you are free to do so, however the xEmotes Project Team will **not** assist you with this. All **unofficial** copies and modifications of xEmotes void any support.
 
-Pull requests are actively reviewed and discussed with TayMcKenzieNZ and the RPEmotes Project Team, and will be accepted so long as they do not contain animation / prop files *(we need permission before adding them)* breaking changes or suspicious and / or malicious code.
+Pull requests are actively reviewed and discussed with TayMcKenzieNZ and the xEmotes Project Team, and will be accepted so long as they do not contain animation / prop files *(we need permission before adding them)* breaking changes or suspicious and / or malicious code.
 
 We also do not accept any copyrighted material. This includes but is not limited to McDonald's, Subway, Sony Playstation, Microsoft Xbox, etc.
 
@@ -603,7 +592,7 @@ We also do not accept any copyrighted material. This includes but is not limited
 
 ❌ You are **not** allowed to sell this script or any of the content within it
 
-❌ You are **not** to outright copy code from this script into your own resources without at least crediting everyone involved in the RPEmotes Project Team. Each and every one of them.
+❌ You are **not** to outright copy code from this script into your own resources without at least crediting everyone involved in the xEmotes Project Team. Each and every one of them.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -611,7 +600,7 @@ We also do not accept any copyrighted material. This includes but is not limited
 
 **All** custom animations and props were added with permissions from the creators and does **not** contain any paid or leaked work.
 
-All animation creators have ***specifically*** asked that their content remains free and that the RPEmotes team and community do not try to profit from them, claim them as their own or reupload them anywhere else but TayMcKenzieNZ's GitHub unless express permission has been arranged and granted by their respective creators, therefore you may not extract the animations and props or use them for your own menus unless written permission has been granted to you by the creators.
+All animation creators have ***specifically*** asked that their content remains free and that the xEmotes team and community do not try to profit from them, claim them as their own or reupload them anywhere else but TayMcKenzieNZ's GitHub unless express permission has been arranged and granted by their respective creators, therefore you may not extract the animations and props or use them for your own menus unless written permission has been granted to you by the creators.
 
 
 A huge thank you to the following people for their amazing contributions made to the menu 🫶🏻 :
@@ -670,7 +659,7 @@ A huge thank you to the following people for their amazing contributions made to
 
 - Thanks to [Copofiscool](https://forum.cfx.re/u/copofiscool/) for adding a toggle to the Favorite Keybinds
 
-- Thank you to [iSentrie](https://forum.cfx.re/u/isentrie/) for additional code, support and joining the RPEmotes project 
+- Thank you to [iSentrie](https://forum.cfx.re/u/isentrie/) for additional code, support and joining the xEmotes project 
 
 - Thank you to Chocoholic Animations for the custom animations
 
@@ -708,4 +697,4 @@ You pay a big role in making this script what it is today and we could not do it
 
 # Our Wiki 📜
 
-The official RPEmotes wiki docs can be accessed [here](https://docs.rpemotes.com/)
+The official xEmotes wiki docs can be accessed [here](https://docs.xEmotes.com/)
