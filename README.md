@@ -3,11 +3,6 @@
 
 This Is Fork Repository From [DullPear](https://github.com/andristum/dpemotes).
 
-<p align="center">
-  <img src="https://i.imgur.com/1RSxyVq.png" alt="Alt Text" width="800" height="auto">  
-</p>
-
-
 # **Join Our Official Discord 💬**
 
 <a href="https://discord.gg/sw3NwDq6C8" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="sw3NwDq6C8" height="120" width="180" /></a>
